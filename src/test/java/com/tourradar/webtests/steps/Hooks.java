@@ -35,14 +35,14 @@ public class Hooks {
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
+        options.addArguments("--window-size=1920,1080")
+        options.addArguments("--start-maximized")
         options.addArguments("--no-proxy-server");
-        options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars
         options.addArguments("--disable-web-security");
         options.addArguments("--allow-running-insecure-content");
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--no-sandbox"); // Bypass OS security model
         options.setExperimentalOption("useAutomationExtension", false);
