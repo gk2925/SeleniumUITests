@@ -1,0 +1,4 @@
+$(document).ready(function() {
+CucumberHTML.timelineItems.pushArray([{"id":"609c5ad8-bd76-4d90-85fe-a54ab67be5f5","feature":"Objective of this feature is to test the login functionality for Tour Radar","scenario":"To verify that login works for valid credentials","start":1677648955592,"group":1,"content":"","tags":"","end":1677648970378,"className":"passed"},{"id":"83ae463b-75cd-43f7-9917-d7e8da560127","feature":"Objective of this feature is to test the search feature","scenario":"To verify that search works as expected with application","start":1677648970389,"group":1,"content":"","tags":"","end":1677648981597,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
+});
