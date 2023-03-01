@@ -24,11 +24,10 @@ jobs:
             command: mvn -version
       - run:
             name: Install Chrome Version
-            command:
-              - curl -L -o google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-              - sudo dpkg -i google-chrome.deb
-              - sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
-              - rm google-chrome.deb
+            command: |
+              curl -O https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg
+              sudo installer -verbose -pkg googlechrome.pkg -target /
+
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
