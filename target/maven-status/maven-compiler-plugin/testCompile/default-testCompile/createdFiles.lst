@@ -1,8 +1,0 @@
-com\tourradar\webtests\steps\LoginSteps.class
-RunCucumberTest.class
-com\tourradar\webtests\pageobjects\SearchBar.class
-com\tourradar\webtests\steps\Base.class
-com\tourradar\webtests\steps\Hooks.class
-com\tourradar\webtests\steps\SearchSteps.class
-com\tourradar\webtests\pageobjects\HomePage.class
-com\tourradar\webtests\pageobjects\LoginPage.class
