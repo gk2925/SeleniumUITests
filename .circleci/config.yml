@@ -19,7 +19,7 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - browser-tools/install-browser-tools:
-            chrome-version: 110.0.5481.178
+            chrome-version: 109.0.5414.74
       # Checkout the code as the first step.
       - checkout
       # Use mvn clean and package as the standard maven build phase
