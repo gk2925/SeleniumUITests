@@ -14,7 +14,7 @@ jobs:
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # Be sure to update the Docker image tag below to openjdk version of your application.
     # A list of available CircleCI Docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/openjdk
-    working_directory: ~/demo/SeleniumUITests # directory where steps will run
+    working_directory: ~/SeleniumUITests # directory where steps will run
     docker:
       - image: cimg/openjdk:11.0
     # Add steps to the job
@@ -23,8 +23,8 @@ jobs:
       - browser-tools/install-browser-tools:
             chrome-version: 109.0.5414.74
       # Checkout the code as the first step.
-      - checkout:
-             path: ~/demo
+      - checkout
+            
       # Use mvn clean and package as the standard maven build phase
       - run:
             name: Check Chrome version
