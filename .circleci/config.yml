@@ -26,10 +26,14 @@ jobs:
       - run:
             name: Check Chrome version
             command: google-chrome --version
-
+      - run:
+            name: Check Current directory
+            command: pwd
+            
       - run:
           name: Check current director
-          command: cd SeleniumUITests/ 
+          command: ls
+           
       - run:
           name: Check current director
           command: chmod 777 /drivers/linux/chromedriver
