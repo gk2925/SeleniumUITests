@@ -28,6 +28,14 @@ jobs:
             command: google-chrome --version
 
       - run:
+        name: Check current director
+        command: pwd
+
+      - run:
+          name: permissions
+          command: chmod 777 /drivers/linux/chromedriver
+
+      - run:
           name: Build
           command: mvn -B -DskipTests clean package
       # Then run your tests!
