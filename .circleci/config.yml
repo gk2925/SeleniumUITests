@@ -29,7 +29,7 @@ jobs:
 
       - run:
           name: Check current director
-          command: mvn status
+          command: pwd 
       - run:
           name: Check current director
           command: chmod 777 /drivers/linux/chromedriver
