@@ -28,8 +28,11 @@ jobs:
             command: google-chrome --version
 
       - run:
-        name: Check current director
-        command: pwd
+          name: Check current director
+          command: mvn status
+      - run:
+          name: Check current director
+          command: chmod 777 /drivers/linux/chromedriver
 
       - run:
           name: Build
