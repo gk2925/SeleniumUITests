@@ -24,7 +24,12 @@ jobs:
             chrome-version: 109.0.5414.74
       # Checkout the code as the first step.
       - checkout
-      
+      - run:
+            name: install maven 
+            command: |
+              sudo apt update
+              sudo apt install maven
+
       - run:
             name: Check Chrome version
             command: |
