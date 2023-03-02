@@ -3,6 +3,7 @@
 version: 2.1
 orbs:
   browser-tools: circleci/browser-tools@1.1
+  maven: circleci/maven@1.4.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
@@ -26,7 +27,7 @@ jobs:
       
       - run:
             name: Check Chrome version
-            command: 
+            command: |
               google-chrome --version
               python --version
               node --version
