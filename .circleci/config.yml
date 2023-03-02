@@ -45,6 +45,10 @@ jobs:
       - run:
           name: Check current director
           command: ls
+          
+      - run:
+          name: install trcli
+          command: pip install trcli
            
       - run:
           name: Check current director
